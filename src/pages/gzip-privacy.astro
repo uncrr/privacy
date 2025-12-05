@@ -1,0 +1,110 @@
+---
+// Privacy page: explicit, self-contained, and does not import other components
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Gzip Explorer — Privacy Policy</title>
+        <link rel="stylesheet" href="/src/styles/global.css" />
+    </head>
+    <body>
+        <main
+            style="max-width:720px;margin:48px auto;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.6;padding:0 16px;"
+        >
+            <h1>Gzip Explorer — Privacy Policy</h1>
+
+            <p>Last updated: December 05, 2025</p>
+
+            <h2>Overview</h2>
+            <p>
+                This privacy page describes the data practices for the mobile
+                application <strong>Gzip Explorer</strong> and the companion static
+                website. <strong>Gzip Explorer</strong> is a lightweight, privacy-first
+                mobile app whose only runtime behavior is to extract `.zip` project
+                archives and display their files in a code editor viewer. The app
+                does not collect, store, or transmit personal data beyond what is
+                required to perform these actions on-device.
+            </p>
+
+            <h2>What Gzip Explorer Does NOT Collect</h2>
+            <ul>
+                <li>No personal identifiers (names, emails, phone numbers).</li>
+                <li>
+                    No behavioral analytics, page-view tracking, or heatmaps.
+                </li>
+                <li>
+                    No cookies or local storage used for tracking for analytics.
+                </li>
+                <li>No user accounts, authentication, or profile storage.</li>
+                <li>No forms that transmit user-provided data to servers.</li>
+                <li>
+                    Files extracted from `.zip` archives are processed locally
+                    on the device and are not uploaded by the app.
+                </li>
+            </ul>
+
+            <h2>Why This Matters</h2>
+            <p>
+                Minimizing data collection reduces risk and simplifies
+                compliance. The site purposefully avoids adding any code (client
+                or server) that would capture user data.
+            </p>
+
+            <h2>Ads and Third-Party Resources</h2>
+            <p>
+                The mobile app may display ads in places selected by the app
+                developer. These are non-targeted ads intended to support
+                development and are not used to build profiles or target users.
+                The companion website uses only build-time dependencies (see
+                `package.json`) and does not run analytics or tracking scripts.
+            </p>
+            <p>
+                If any future contributor adds a third-party script or ad SDK,
+                it must be approved and explicitly documented on this page.
+            </p>
+
+            <h2>Security & Code Practices</h2>
+            <ul>
+                <li>
+                    No server-side endpoints exist that accept or store POSTed
+                    user data.
+                </li>
+                <li>
+                    All app file processing (unzipping and file rendering)
+                    happens on-device; the app does not transmit file contents
+                    to remote servers.
+                </li>
+                <li>
+                    Avoid introducing SSR endpoints or any networked data
+                    collection without review and explicit documentation on this
+                    page.
+                </li>
+                <li>
+                    Follow secure coding practices when editing code: validate
+                    inputs where applicable and avoid eval-like patterns.
+                </li>
+            </ul>
+
+            <h2>Changes to This Policy</h2>
+            <p>
+                If the site ever changes to collect data, this page will be
+                updated and the change will be explicitly documented here.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                If you have questions about this privacy approach or the
+                behavior of <strong>Gzip Explorer</strong>, open an issue in
+                this repository or add a pull request with suggested changes to
+                this document.
+            </p>
+
+            <footer style="margin-top:48px;font-size:0.9rem;color:#666;">
+                &copy; 2025 Gzip Explorer.
+            </footer>
+        </main>
+    </body>
+</html>
